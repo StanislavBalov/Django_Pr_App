@@ -1,0 +1,17 @@
+<!-- home.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Available Pages</h1>
+    <ul>
+    {% for page in pages %}
+        <li><a href="{{ page.url }}">{{ page.name }}</a><li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
